@@ -13,16 +13,14 @@ html,body{
 
 /* Header */
 header{
-    background-color: #f8f8f89a;
-    padding: 10px 0;
+    background-color: #f7f7f79a;
+    padding: 10px 2% 30px 2%;
 }
 .topo{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
 .logo1{
     float: left;
     width: 150px;
@@ -41,6 +39,78 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
 /* Fim do Header */
+
+/* Início section1 */
+section.cover-form{
+    width: 100%;
+    padding: 0 2%
+}
+.bg{
+    width: 1000px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/img/bg-form.jpg);
+}
+.container-form{
+    float: right;
+    margin-right: 40px;
+    width: 400px;
+    height: 90%;
+    position: relative;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.container-form h2{
+    font-weight: normal;
+    padding: 20px 15px;
+    padding: 15px;
+    color: black;
+    font-size: 18px;
+    background-color: rgb(234,236,239);
+}
+.container-form form{
+    margin-top: 8px;
+    padding: 20px;
+}
+.container-form form p{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #272727;
+}
+.container-form form input{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px ;
+    background-color: rgb(234,236,239,0.6);
+}
+.container-form form input[type=submit]{
+    background-color: #2970a0;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Fim section1 */
+
+
+
+/* Media Queries */
+@media screen and (max-width: 600px){
+    header{
+        text-align: center;
+    }
+    
+    .logo1,.logo2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+}
