@@ -212,7 +212,7 @@ section.chamada h3{
 
 
 /* Media Queries */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 789px){
     .bg{
         text-align: center;
     }
@@ -233,6 +233,9 @@ section.chamada h3{
     .item2-mosaico{
         width: 100%;
         text-align: center;
+    }
+    .rodape{
+        height: auto;
     }
 }
 @media screen and (max-width: 600px){
