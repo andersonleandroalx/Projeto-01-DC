@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 html,body{
     height: 100%;
@@ -14,9 +15,17 @@ html,body{
 /* Header */
 header{
     background-color: #f7f7f79a;
-    padding: 10px 2% 30px 2%;
+    padding: 10px 18% 30px 18%;
+    border-bottom: 3px solid rgb(65, 128, 86);;
+    margin-bottom: 1px;
 }
-.topo{
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: tomato;
+}
+.container-all{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -44,41 +53,41 @@ header{
 /* Início section1 */
 section.cover-form{
     width: 100%;
-    padding: 0 2%
+    
 }
 .bg{
-    width: 1000px;
+    position: relative;
     height: 500px;
     background-position: center;
     background-size: cover;
     background-image: url(/img/bg-form.jpg);
 }
 .container-form{
-    float: right;
     margin-right: 40px;
     width: 400px;
     height: 90%;
-    position: relative;
+    position: absolute;
+    right: 10px;
+
     top: 5%;
     background-color: rgba(255, 255, 255, 0.5);
 }
 .container-form h2{
-    font-weight: normal;
     padding: 20px 15px;
     padding: 15px;
     color: black;
     font-size: 18px;
     background-color: rgb(234,236,239);
+    text-align: center;
 }
 .container-form form{
     margin-top: 8px;
     padding: 20px;
 }
 .container-form form p{
-    font-size: 15px;
+    font-size: 17px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #272727;
 }
 .container-form form input{
     width: 100%;
@@ -94,15 +103,138 @@ section.cover-form{
     width: 100%;
     text-transform: uppercase;
     color: white;
+    border: none;
     font-size: 17px;
     font-weight: bold;
     cursor: pointer;
 }
-/* Fim section1 */
+/* Fim section form */
+
+/* Inicio section chamada */
+section.chamada{
+    text-align: center;
+    margin: 0 auto;
+}
+section.chamada .container{
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 150px;
+    padding-top: 40px;
+    margin: 0 auto;
+}
+section.chamada h2{
+    width: 96%;
+    display: inline-block;
+    max-width: 700px;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+}
+section.chamada h3{
+    width: 96%;
+    display: inline-block;
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+/* Fim section chamada */
+
+
+/* Inicio section mosaico */
+.flex-mosaico{
+    display: flex;
+}
+.item1-mosaico{
+    width: 60%;
+}
+.item1-mosaico img{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.item2-mosaico{
+    width: 40%;
+    height: 300px;
+    padding: 50px;
+    /*background-color: rgb(71, 255, 169,0.5);*/
+    background-color: rgb(206, 206, 206,0.5);
+    font-weight: bold;
+}
+.item2-mosaico h2{
+    width: 96%;
+    max-width: 700px;
+    font-size: 30px;
+    font-weight: normal;
+}
+.item2-mosaico h3{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Fim section chamada */
+
+
+/* Inicio rodapé */
+.rodape{
+    height: 200px;
+    padding: 30px;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+}
+.contato{
+    text-align: center;
+    padding: 40px;
+}
+.contato img{
+    width: 150px;
+    height: 100px;
+}
+.rodape h2{
+    padding-bottom: 20px;
+}
+.rodape p{
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+.contato p{
+    font-size: 17px;
+}
+
+/* Fim rodapé */
+
+
 
 
 
 /* Media Queries */
+@media screen and (max-width: 768px){
+    .bg{
+        text-align: center;
+    }
+    .container-form{
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .flex-mosaico{
+        display: block;
+    }
+    .item1-mosaico{
+        width: 100%;
+    }
+    .item2-mosaico{
+        width: 100%;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 600px){
     header{
         text-align: center;
