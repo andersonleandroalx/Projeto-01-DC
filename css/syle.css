@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+/* fim das configurações padrões */
+.clear{
+    clear: both;
+}
+
+/* Header */
+header{
+    background-color: #f8f8f89a;
+    padding: 10px 0;
+}
+.topo{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo1{
+    float: left;
+    width: 150px;
+    height: 100px;
+    background-image: url(/img/logo_construtora.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo2{
+    float: right;
+    width: 200px;
+    height: 100px;
+    background-image: url(/img/logo_condo.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Fim do Header */
