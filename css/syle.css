@@ -213,6 +213,9 @@ section.chamada h3{
 
 /* Media Queries */
 @media screen and (max-width: 789px){
+    section.chamada h2{     
+        font-size: 25px;   
+    }
     .bg{
         text-align: center;
     }
